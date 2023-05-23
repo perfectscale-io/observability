@@ -1,1 +1,1 @@
-# observability
+##Welcome to the Observability Repository! This repository contains a collection of dashboards designed to provide comprehensive observability into your kubernetes workloads.
