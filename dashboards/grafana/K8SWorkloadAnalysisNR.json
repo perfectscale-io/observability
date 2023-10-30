@@ -1301,7 +1301,7 @@
           "refId": "A"
         }
       ],
-      "title": "Pods -> Nodes no rules",
+      "title": "Pods -> Nodes",
       "transformations": [
         {
           "id": "groupBy",
@@ -1461,7 +1461,7 @@
     ]
   },
   "time": {
-    "from": "now-24h",
+    "from": "now-3h",
     "to": "now"
   },
   "timepicker": {
@@ -1478,6 +1478,6 @@
   "timezone": "utc",
   "title": "K8S Workload Analysis NR",
   "uid": "7Z9GCiVIz",
-  "version": 8,
+  "version": 10,
   "weekStart": ""
 }
