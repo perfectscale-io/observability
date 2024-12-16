@@ -17,10 +17,15 @@
             "formulas": [
               {
                 "alias": "Recommendations Request",
-                "style": { "palette": "dog_classic" },
+                "style": {
+                  "palette": "dog_classic"
+                },
                 "formula": "query0"
               },
-              { "alias": "Current Request", "formula": "query1" }
+              {
+                "alias": "Current Request",
+                "formula": "query1"
+              }
             ],
             "queries": [
               {
@@ -54,7 +59,12 @@
         },
         "markers": []
       },
-      "layout": { "x": 0, "y": 0, "width": 6, "height": 3 }
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 6,
+        "height": 3
+      }
     },
     {
       "id": 8585437373311969,
@@ -69,8 +79,14 @@
         "requests": [
           {
             "formulas": [
-              { "alias": "Recommendations Limit", "formula": "query0" },
-              { "alias": "Current Limit", "formula": "query1" }
+              {
+                "alias": "Recommendations Limit",
+                "formula": "query0"
+              },
+              {
+                "alias": "Current Limit",
+                "formula": "query1"
+              }
             ],
             "queries": [
               {
@@ -104,7 +120,12 @@
         },
         "markers": []
       },
-      "layout": { "x": 6, "y": 0, "width": 6, "height": 3 }
+      "layout": {
+        "x": 6,
+        "y": 0,
+        "width": 6,
+        "height": 3
+      }
     },
     {
       "id": 4619593661456316,
@@ -119,8 +140,14 @@
         "requests": [
           {
             "formulas": [
-              { "alias": "Recommendations Request", "formula": "query0" },
-              { "alias": "Current Request", "formula": "query1" }
+              {
+                "alias": "Recommendations Request",
+                "formula": "query0"
+              },
+              {
+                "alias": "Current Request",
+                "formula": "query1"
+              }
             ],
             "queries": [
               {
@@ -155,7 +182,12 @@
         },
         "markers": []
       },
-      "layout": { "x": 0, "y": 3, "width": 6, "height": 3 }
+      "layout": {
+        "x": 0,
+        "y": 3,
+        "width": 6,
+        "height": 3
+      }
     },
     {
       "id": 6906396763066218,
@@ -170,8 +202,14 @@
         "requests": [
           {
             "formulas": [
-              { "alias": "Recommendations Request", "formula": "query0" },
-              { "alias": "Current Request", "formula": "query1" }
+              {
+                "alias": "Recommendations Request",
+                "formula": "query0"
+              },
+              {
+                "alias": "Current Request",
+                "formula": "query1"
+              }
             ],
             "queries": [
               {
@@ -205,7 +243,12 @@
         },
         "markers": []
       },
-      "layout": { "x": 6, "y": 3, "width": 6, "height": 3 }
+      "layout": {
+        "x": 6,
+        "y": 3,
+        "width": 6,
+        "height": 3
+      }
     },
     {
       "id": 5264142885437889,
@@ -216,7 +259,11 @@
         "type": "query_value",
         "requests": [
           {
-            "formulas": [{ "formula": "query0" }],
+            "formulas": [
+              {
+                "formula": "query0"
+              }
+            ],
             "queries": [
               {
                 "data_source": "metrics",
@@ -232,10 +279,17 @@
         "precision": 2,
         "timeseries_background": {
           "type": "area",
-          "yaxis": { "include_zero": false }
+          "yaxis": {
+            "include_zero": false
+          }
         }
       },
-      "layout": { "x": 0, "y": 6, "width": 2, "height": 2 }
+      "layout": {
+        "x": 0,
+        "y": 6,
+        "width": 2,
+        "height": 2
+      }
     },
     {
       "id": 6116340743223136,
@@ -250,8 +304,14 @@
         "requests": [
           {
             "formulas": [
-              { "alias": "Waste", "formula": "query0" },
-              { "alias": "Cost", "formula": "query1" }
+              {
+                "alias": "Waste",
+                "formula": "query0"
+              },
+              {
+                "alias": "Cost",
+                "formula": "query1"
+              }
             ],
             "queries": [
               {
@@ -285,7 +345,12 @@
         },
         "markers": []
       },
-      "layout": { "x": 2, "y": 6, "width": 5, "height": 4 }
+      "layout": {
+        "x": 2,
+        "y": 6,
+        "width": 5,
+        "height": 4
+      }
     },
     {
       "id": 5369787371666234,
@@ -299,7 +364,12 @@
         "type": "timeseries",
         "requests": [
           {
-            "formulas": [{ "alias": "Value", "formula": "query1" }],
+            "formulas": [
+              {
+                "alias": "Value",
+                "formula": "query1"
+              }
+            ],
             "queries": [
               {
                 "data_source": "metrics",
@@ -320,7 +390,12 @@
           }
         ]
       },
-      "layout": { "x": 7, "y": 6, "width": 5, "height": 4 }
+      "layout": {
+        "x": 7,
+        "y": 6,
+        "width": 5,
+        "height": 4
+      }
     },
     {
       "id": 2174445961180878,
@@ -331,7 +406,11 @@
         "type": "query_value",
         "requests": [
           {
-            "formulas": [{ "formula": "query1" }],
+            "formulas": [
+              {
+                "formula": "query1"
+              }
+            ],
             "queries": [
               {
                 "data_source": "metrics",
@@ -346,11 +425,18 @@
         "autoscale": true,
         "precision": 2,
         "timeseries_background": {
-          "yaxis": { "include_zero": false },
+          "yaxis": {
+            "include_zero": false
+          },
           "type": "area"
         }
       },
-      "layout": { "x": 0, "y": 8, "width": 2, "height": 2 }
+      "layout": {
+        "x": 0,
+        "y": 8,
+        "width": 2,
+        "height": 2
+      }
     }
   ],
   "template_variables": [

@@ -342,7 +342,7 @@
               }
             ]
           },
-          "unit": "decbytes"
+          "unit": "bytes"
         },
         "overrides": []
       },
@@ -457,7 +457,7 @@
               }
             ]
           },
-          "unit": "decbytes"
+          "unit": "bytes"
         },
         "overrides": []
       },
@@ -577,7 +577,7 @@
           "expr": "max(ps_replicas_avg{ps_namespace=~\"${namespace}\",workload_name=~\"${workload}\"})",
           "hide": false,
           "instant": false,
-          "legendFormat": "Max replicas count",
+          "legendFormat": "Avg replicas count",
           "range": true,
           "refId": "A"
         },
