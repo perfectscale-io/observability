@@ -1,0 +1,483 @@
+{
+  "title": "PerfectScale Prometheus Exporter | Workload Overview",
+  "description": "",
+  "widgets": [
+    {
+      "id": 1565688625897228,
+      "definition": {
+        "title": "CPU Request",
+        "title_size": "16",
+        "title_align": "left",
+        "show_legend": true,
+        "legend_layout": "vertical",
+        "legend_columns": ["avg", "max", "value"],
+        "type": "timeseries",
+        "requests": [
+          {
+            "formulas": [
+              {
+                "alias": "Recommendations Request",
+                "style": {
+                  "palette": "dog_classic"
+                },
+                "formula": "query0"
+              },
+              {
+                "alias": "Current Request",
+                "formula": "query1"
+              }
+            ],
+            "queries": [
+              {
+                "data_source": "metrics",
+                "name": "query0",
+                "query": "sum:perfectscale.ps_recommended_cpu_request_cores{$cluster,$namespace,$workload,$container} by {ps_container_name}"
+              },
+              {
+                "data_source": "metrics",
+                "name": "query1",
+                "query": "sum:perfectscale.ps_current_cpu_request_cores{$cluster,$namespace,$workload,$container} by {ps_container_name}"
+              }
+            ],
+            "response_format": "timeseries",
+            "style": {
+              "palette": "dog_classic",
+              "order_by": "tags",
+              "order_reverse": false,
+              "line_type": "solid",
+              "line_width": "thick"
+            },
+            "display_type": "line"
+          }
+        ],
+        "yaxis": {
+          "scale": "linear",
+          "label": "",
+          "include_zero": true,
+          "min": "auto",
+          "max": "auto"
+        },
+        "markers": []
+      },
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 6,
+        "height": 3
+      }
+    },
+    {
+      "id": 8585437373311969,
+      "definition": {
+        "title": "CPU Limits",
+        "title_size": "16",
+        "title_align": "left",
+        "show_legend": true,
+        "legend_layout": "vertical",
+        "legend_columns": ["avg", "max", "value"],
+        "type": "timeseries",
+        "requests": [
+          {
+            "formulas": [
+              {
+                "alias": "Recommendations Limit",
+                "formula": "query0"
+              },
+              {
+                "alias": "Current Limit",
+                "formula": "query1"
+              }
+            ],
+            "queries": [
+              {
+                "data_source": "metrics",
+                "name": "query0",
+                "query": "sum:perfectscale.ps_recommended_cpu_limit_cores{$cluster,$namespace,$workload,$container} by {ps_container_name}"
+              },
+              {
+                "data_source": "metrics",
+                "name": "query1",
+                "query": "sum:perfectscale.ps_current_cpu_limit_cores{$cluster,$namespace,$workload,$container} by {ps_container_name}"
+              }
+            ],
+            "response_format": "timeseries",
+            "style": {
+              "palette": "dog_classic",
+              "order_by": "tags",
+              "order_reverse": false,
+              "line_type": "solid",
+              "line_width": "thick"
+            },
+            "display_type": "line"
+          }
+        ],
+        "yaxis": {
+          "scale": "linear",
+          "label": "",
+          "include_zero": true,
+          "min": "auto",
+          "max": "auto"
+        },
+        "markers": []
+      },
+      "layout": {
+        "x": 6,
+        "y": 0,
+        "width": 6,
+        "height": 3
+      }
+    },
+    {
+      "id": 4619593661456316,
+      "definition": {
+        "title": "Memory Request",
+        "title_size": "16",
+        "title_align": "left",
+        "show_legend": true,
+        "legend_layout": "vertical",
+        "legend_columns": ["avg", "max", "value"],
+        "type": "timeseries",
+        "requests": [
+          {
+            "formulas": [
+              {
+                "alias": "Recommendations Request",
+                "formula": "query0"
+              },
+              {
+                "alias": "Current Request",
+                "formula": "query1"
+              }
+            ],
+            "queries": [
+              {
+                "data_source": "metrics",
+                "name": "query0",
+                "query": "sum:perfectscale.ps_recommended_memory_request_bytes{$cluster,$namespace,$workload,$container} by {ps_container_name}"
+              },
+              {
+                "data_source": "metrics",
+                "name": "query1",
+                "query": "sum:perfectscale.ps_current_memory_request_bytes{$cluster,$namespace,$workload,$container} by {ps_container_name}"
+              }
+            ],
+            "response_format": "timeseries",
+            "style": {
+              "palette": "dog_classic",
+              "order_by": "tags",
+              "order_reverse": false,
+              "color_order": "monotonic",
+              "line_type": "solid",
+              "line_width": "thick"
+            },
+            "display_type": "line"
+          }
+        ],
+        "yaxis": {
+          "scale": "linear",
+          "label": "",
+          "include_zero": true,
+          "min": "auto",
+          "max": "auto"
+        },
+        "markers": []
+      },
+      "layout": {
+        "x": 0,
+        "y": 3,
+        "width": 6,
+        "height": 3
+      }
+    },
+    {
+      "id": 6906396763066218,
+      "definition": {
+        "title": "Memory Request",
+        "title_size": "16",
+        "title_align": "left",
+        "show_legend": true,
+        "legend_layout": "vertical",
+        "legend_columns": ["avg", "max", "value"],
+        "type": "timeseries",
+        "requests": [
+          {
+            "formulas": [
+              {
+                "alias": "Recommendations Request",
+                "formula": "query0"
+              },
+              {
+                "alias": "Current Request",
+                "formula": "query1"
+              }
+            ],
+            "queries": [
+              {
+                "data_source": "metrics",
+                "name": "query0",
+                "query": "sum:perfectscale.ps_recommended_memory_request_bytes{$cluster,$namespace,$workload,$container} by {ps_container_name}"
+              },
+              {
+                "data_source": "metrics",
+                "name": "query1",
+                "query": "sum:perfectscale.ps_current_memory_request_bytes{$cluster,$namespace,$workload,$container} by {ps_container_name}"
+              }
+            ],
+            "response_format": "timeseries",
+            "style": {
+              "palette": "dog_classic",
+              "order_by": "tags",
+              "order_reverse": false,
+              "line_type": "solid",
+              "line_width": "thick"
+            },
+            "display_type": "line"
+          }
+        ],
+        "yaxis": {
+          "scale": "linear",
+          "label": "",
+          "include_zero": true,
+          "min": "auto",
+          "max": "auto"
+        },
+        "markers": []
+      },
+      "layout": {
+        "x": 6,
+        "y": 3,
+        "width": 6,
+        "height": 3
+      }
+    },
+    {
+      "id": 5264142885437889,
+      "definition": {
+        "title": "Avarage Replicas Count",
+        "title_size": "16",
+        "title_align": "left",
+        "type": "query_value",
+        "requests": [
+          {
+            "formulas": [
+              {
+                "formula": "query0"
+              }
+            ],
+            "queries": [
+              {
+                "data_source": "metrics",
+                "name": "query0",
+                "query": "max:perfectscale.ps_replicas_avg{$cluster,$namespace,$workload}",
+                "aggregator": "max"
+              }
+            ],
+            "response_format": "scalar"
+          }
+        ],
+        "autoscale": true,
+        "precision": 2,
+        "timeseries_background": {
+          "type": "area",
+          "yaxis": {
+            "include_zero": false
+          }
+        }
+      },
+      "layout": {
+        "x": 0,
+        "y": 6,
+        "width": 2,
+        "height": 2
+      }
+    },
+    {
+      "id": 6116340743223136,
+      "definition": {
+        "title": "Cost & Waste (hourly)",
+        "title_size": "16",
+        "title_align": "left",
+        "show_legend": true,
+        "legend_layout": "vertical",
+        "legend_columns": ["avg", "max", "value"],
+        "type": "timeseries",
+        "requests": [
+          {
+            "formulas": [
+              {
+                "alias": "Waste",
+                "formula": "query0"
+              },
+              {
+                "alias": "Cost",
+                "formula": "query1"
+              }
+            ],
+            "queries": [
+              {
+                "data_source": "metrics",
+                "name": "query0",
+                "query": "sum:perfectscale.ps_waste_usd{$cluster,$namespace,$workload} by {workload_name}"
+              },
+              {
+                "data_source": "metrics",
+                "name": "query1",
+                "query": "sum:perfectscale.ps_cost_usd{$cluster,$namespace,$workload} by {workload_name}"
+              }
+            ],
+            "response_format": "timeseries",
+            "style": {
+              "palette": "dog_classic",
+              "order_by": "tags",
+              "order_reverse": false,
+              "line_type": "solid",
+              "line_width": "thick"
+            },
+            "display_type": "line"
+          }
+        ],
+        "yaxis": {
+          "scale": "linear",
+          "label": "",
+          "include_zero": true,
+          "min": "auto",
+          "max": "auto"
+        },
+        "markers": []
+      },
+      "layout": {
+        "x": 2,
+        "y": 6,
+        "width": 5,
+        "height": 4
+      }
+    },
+    {
+      "id": 5369787371666234,
+      "definition": {
+        "title": "Indicators",
+        "title_size": "16",
+        "title_align": "left",
+        "show_legend": true,
+        "legend_layout": "vertical",
+        "legend_columns": ["avg", "max", "value"],
+        "type": "timeseries",
+        "requests": [
+          {
+            "formulas": [
+              {
+                "alias": "Value",
+                "formula": "query1"
+              }
+            ],
+            "queries": [
+              {
+                "data_source": "metrics",
+                "name": "query1",
+                "query": "sum:perfectscale.ps_workload_indicators{$cluster,$namespace,$workload,$container,$indicator_level,$indicator_name} by {indicator_level,indicator_name,workload_name}"
+              }
+            ],
+            "response_format": "timeseries",
+            "style": {
+              "palette": "red",
+              "order_by": "tags",
+              "order_reverse": false,
+              "color_order": "shuffled",
+              "line_type": "solid",
+              "line_width": "normal"
+            },
+            "display_type": "bars"
+          }
+        ]
+      },
+      "layout": {
+        "x": 7,
+        "y": 6,
+        "width": 5,
+        "height": 4
+      }
+    },
+    {
+      "id": 2174445961180878,
+      "definition": {
+        "title": "Max Replicas Count",
+        "title_size": "16",
+        "title_align": "left",
+        "type": "query_value",
+        "requests": [
+          {
+            "formulas": [
+              {
+                "formula": "query1"
+              }
+            ],
+            "queries": [
+              {
+                "data_source": "metrics",
+                "name": "query1",
+                "query": "max:perfectscale.ps_replicas_max{$cluster,$namespace,$workload}",
+                "aggregator": "max"
+              }
+            ],
+            "response_format": "scalar"
+          }
+        ],
+        "autoscale": true,
+        "precision": 2,
+        "timeseries_background": {
+          "yaxis": {
+            "include_zero": false
+          },
+          "type": "area"
+        }
+      },
+      "layout": {
+        "x": 0,
+        "y": 8,
+        "width": 2,
+        "height": 2
+      }
+    }
+  ],
+  "template_variables": [
+    {
+      "name": "cluster",
+      "prefix": "cluster_name",
+      "available_values": [],
+      "default": "*"
+    },
+    {
+      "name": "namespace",
+      "prefix": "ps_namespace",
+      "available_values": [],
+      "default": "perfectscale"
+    },
+    {
+      "name": "workload",
+      "prefix": "workload_name",
+      "available_values": [],
+      "default": "perfectscale-exporter"
+    },
+    {
+      "name": "container",
+      "prefix": "ps_container_name",
+      "available_values": [],
+      "default": "*"
+    },
+    {
+      "name": "indicator_level",
+      "prefix": "indicator_level",
+      "available_values": [],
+      "default": "*"
+    },
+    {
+      "name": "indicator_name",
+      "prefix": "indicator_name",
+      "available_values": [],
+      "default": "*"
+    }
+  ],
+  "layout_type": "ordered",
+  "notify_list": [],
+  "reflow_type": "fixed"
+}
